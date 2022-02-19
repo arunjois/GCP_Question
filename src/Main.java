@@ -8,20 +8,20 @@ public class Main {
     public static void main(String args[]) throws IOException  {
         ArrayList<Integer> cache = new ArrayList<Integer>();
         Random randomNumGenerator = new Random();
-        /*while(cache.size()<3) {
-            int randomInt = randomNumGenerator.nextInt(5);
+        while(cache.size()<120) {
+            int randomInt = randomNumGenerator.nextInt(341);
             if (!cache.contains(randomInt)) {
                 cache.add(randomInt);
             }
-        }*/
-        cache.add(0);
-        cache.add(1);
-        cache.add(2);
+        }
+        //cache.add(0);
+        //cache.add(1);
+        //cache.add(2);
 
         System.out.println(cache.size());
         FileWrite f = new FileWrite();
         f.writeFile(cache);
         f.generateText();
-        //f.writeFileAns(cache);
+        f.writeFileAns(cache);
     }
 }
