@@ -9,7 +9,7 @@ public class Main {
         ArrayList<Integer> cache = new ArrayList<Integer>();
         Random randomNumGenerator = new Random();
         while(cache.size()<120) {
-            int randomInt = randomNumGenerator.nextInt(341);
+            int randomInt = randomNumGenerator.nextInt(361);
             if (!cache.contains(randomInt)) {
                 cache.add(randomInt);
             }
