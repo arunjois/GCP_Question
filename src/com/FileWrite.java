@@ -38,7 +38,7 @@ public class FileWrite {
         String file_content = Files.readString(fileName);
 
         // Printing the content inside the file
-        //System.out.println(file_content);
+        // System.out.println(file_content);
         //return 1;
     }
     public void generateText() {
