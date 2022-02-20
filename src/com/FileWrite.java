@@ -31,9 +31,10 @@ public class FileWrite {
         // Writing into the file
         Files.writeString(fileName, startingText + questionText + endingText);
 
-        System.out.println("Array Matching");
+        /*System.out.println("Array Matching");
         System.out.println(DataSet.answerSet.length);
         System.out.println(DataSet.questionSet.length);
+        */
         // Reading the content of the file
         String file_content = Files.readString(fileName);
 

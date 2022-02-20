@@ -18,7 +18,7 @@ public class Main {
         //cache.add(1);
         //cache.add(2);
 
-        System.out.println(cache.size());
+        //System.out.println(cache.size());
         FileWrite f = new FileWrite();
         f.writeFile(cache);
         f.generateText();
