@@ -1059,9 +1059,8 @@ public class DataSet {
                     " \\part kubectl beta run\n"+
                     "\\end{parts}\n",
             "\\question\n"+
-                    " . What command would you use to have 10 replicas of a deployment named\n"+
+                    " . What command would you use to have 10 replicas of a deployment named "+ "-app-deploy?\n"+
                     "\\begin{parts}\n"+
-                    "-app-deploy?\n"+
                     " \\part kubectl upgrade deployment ch07-app-deploy --replicas=5\n"+
                     " \\part gcloud containers deployment ch07-app-deploy --replicas=5\n"+
                     " \\part kubectl scale deployment ch07-app-deploy --replicas=10\n"+
@@ -1277,8 +1276,8 @@ public class DataSet {
                     "\\end{parts}\n",
             "\\question\n"+
                     " . You have deployed an application to a Kubernetes cluster that processes sensor data from a fleet of delivery vehicles. The volume of incoming data depends on the number of vehicles making deliveries. The number of vehicles making deliveries is dependent on the number of customer orders. Customer orders are high during daytime hours, holiday seasons, and when major advertising campaigns are run. You want to make sure you have enough nodes\n"+
-                    "\\begin{parts}\n"+
                     "ing to handle the load, but you want to keep your costs down. How should you configure your Kubernetes cluster?\n"+
+                    "\\begin{parts}\n"+
                     " \\part Deploy as many nodes as your budget allows.\n"+
                     " \\part Enable autoscaling.\n"+
                     " \\part Monitor CPU, disk, and network utilization and add nodes as necessary.\n"+
@@ -3112,7 +3111,7 @@ public class DataSet {
             "\\item   . D. All of the options are available along with zip from Cloud Storage.",
             "\\item   . A. The HTTP trigger allows for the use of POST, GET, and PUT calls, so option A is the correct answer. Webhook and Cloud HTTP are not valid trigger types. Option D is incorrect because option A is the correct answer.",
             "\\item    D. Once a bucket is created as either regional or multiregional, it cannot be changed to the other, so option D is correct. Nearline to coldline and regional to nearline are both allowed, as is multiregional to coldline.",
-            "\\item    C. The goal is to reduce cost, so you would want to use the least costly storage option. Coldline has the lowest per-gigabyte charge at $0.07/GB/month, so option C is correct. Nearline is the next lowest followed by regional. Multiregional has the highest per-gigabyte charge. Both nearline and coldline have access charges, but those are not considered in this question.",
+            "\\item    C. The goal is to reduce cost, so you would want to use the least costly storage option. Coldline has the lowest per-gigabyte charge at $0.07 per GB per month, so option C is correct. Nearline is the next lowest followed by regional. Multiregional has the highest per-gigabyte charge. Both nearline and coldline have access charges, but those are not considered in this question.",
             "\\item    B. Bigtable is a wide-column database that can ingest large volumes of data consistently, so option B is correct. It also supports low-millisecond latency, making it a good choice for supporting querying. Cloud Spanner is a global relational database that is not suitable for high-speed ingestion of large volumes of data. Datastore is an object data model and not a good fit for IoT or other time series data. BigQuery is an analytics database and not designed for ingestion of large volumes of data in short periods of time.",
             "\\item    A. Option A is correct because Memorystore is a managed Redis cache. The cache can  be used to store the results of queries. Follow-on queries that reference the data stored in the cache can read it from the cache, which is much faster than reading from persistent disks. SSDs have significantly lower latency than hard disk drives and should be used for performance-sensitive applications like databases. Options B and D are incorrect because HDD persistent disks do give the best performance with respect to IOPS. Options C and D are incorrect because Datastore is a managed NoSQL database and would not have any impact on SQL query performance.",
             "\\item    B. HDDs are the better choice for persistent disks for a local database when performance is not the primary concern and you are trying to keep costs down, so option B is correct. Option A is wrong because SSDs are more expensive and the users do not need the lowest latency available. Options C and D are wrong; both of those are other databases that would not be used to store data in a local relational database.",
