@@ -2627,7 +2627,7 @@ public class DataSet {
                     " \\part gcloud iam list ace-exam-project\n"+
                     "\\end{parts}\n",
             "\\question\n"+
-                    "  You are working in the form displayed after clicking the Add link in the IAM form of IAM & Admin in Cloud Console. There is a parameter called New Members. What items would you enter in that parameter?\n"+
+                    "  You are working in the form displayed after clicking the Add link in the IAM form of IAM and Admin in Cloud Console. There is a parameter called New Members. What items would you enter in that parameter?\n"+
                     "\\begin{parts}\n"+
                     " \\part Individual users only\n"+
                     " \\part Individual users or groups\n"+
